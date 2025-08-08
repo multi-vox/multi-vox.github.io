@@ -13,12 +13,10 @@
 ## Abstract
 
 Musical performance in vocal ensembles is shaped by multimodal and spatial interactions among singers and their environment. To facilitate research into these dynamics, we introduce MULTIVOX, a spatialized audio-visual dataset comprising 154 a cappella choral performances. The repertoire includes vocal warm-ups, lullabies, Latin American songs, and popular music arranged for choir, recorded in two acoustically distinct environments: an auditorium and a recording studio. Performances are conducted by small and large vocal ensembles, and captured using multiple synchronized modalities: 360° video, first-order Ambisonics, ORTF stereo, and near-field microphones for each singer.
-
 MULTIVOX includes structured annotations specifying each performer's spatial location, singing direction, height, and gender. Not all visible performers are active in every recording, enabling analyses of selective participation. The dataset supports fine-grained analysis of individual and ensemble-level features. For example, near-field recordings enable per-singer pitch tracking and comparisons to ensemble-level fundamental frequency contours. Temporal coordination and onset alignment across performers can also be studied in detail.
-
 With its multimodal recordings and performer-level annotations, MULTIVOX supports research in music informatics and multimodal perception, including sound event localization, ensemble synchronization, and performer-specific modeling in real-world music contexts.
 
-**Keywords:** Multimodal datasets, Singing groups, Choral music, Sound Localization, Musician Synchrony, Sound Direction of Arrival
+**Keywords:** Multimodal Datasets, Singing Groups, Choral Music, Sound Localization, Musician Synchrony, Sound Direction of Arrival
 
 ---
 
