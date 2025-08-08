@@ -258,4 +258,4 @@ Future work will be able to use MULTIVOX to develop SELD models that can carry o
 
 [41] U. M. Ortega Ortega, "Guía Práctica Orquestal, Coro," *Asociación Azteca Amigos de la Cultura y las Artes A.C.*, 2023.
 
-[42] Recurso Coral, "||: Recurso Coral Información Útil para Directores y Cantantes de Coro," 2021. [Online]. Available: https://recursocoral.com.ar/
+[42] Recurso Coral, "Recurso Coral Información Útil para Directores y Cantantes de Coro," 2021. [Online]. Available: https://recursocoral.com.ar/
