@@ -297,9 +297,13 @@ body {
 
 /* Download options */
 .download-options {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     margin: 40px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .download-card {
@@ -309,7 +313,6 @@ body {
     text-align: center;
     border: 2px solid #e9ecef;
     transition: all 0.3s ease;
-    max-width: 400px;
     width: 100%;
 }
 
@@ -435,12 +438,13 @@ body {
     }
     
     .download-options {
+        grid-template-columns: 1fr;
         margin: 30px 0;
+        gap: 20px;
     }
     
     .download-card {
-        max-width: none;
-        margin: 0 auto;
+        margin: 0;
     }
 }
 
