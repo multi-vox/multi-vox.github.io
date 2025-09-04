@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MULTIVOX: A Spatial Audio-Visual Dataset of Singing Groups</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">MULTIVOX: A Spatial Audio-Visual Dataset of Singing Groups</h1>
+            
+            <div class="authors">
+                <div class="author">
+                    <span class="name">Gerardo Andrés Meza Gómez</span>
+                    <span class="affiliation">1,2</span>
+                </div>
+                <div class="author">
+                    <span class="name">Mariana Sepúlveda Morales</span>
+                    <span class="affiliation">2</span>
+                </div>
+                <div class="author">
+                    <span class="name">Adrian S. Roman</span>
+                    <span class="affiliation">3</span>
+                </div>
+                <div class="author">
+                    <span class="name">Jorge Rodrigo Sigal Sefchovich</span>
+                    <span class="affiliation">4</span>
+                </div>
+                <div class="author">
+                    <span class="name">Iran R. Roman</span>
+                    <span class="affiliation">5</span>
+                </div>
+            </div>
+            
+            <div class="affiliations">
+                <div class="affiliation-item">
+                    <span class="affiliation-number">1</span>
+                    <span class="affiliation-text">Universidad Nacional Autónoma de México, CDMX, México</span>
+                </div>
+                <div class="affiliation-item">
+                    <span class="affiliation-number">2</span>
+                    <span class="affiliation-text">Universidad Autónoma de Tamaulipas, Tampico, México</span>
+                </div>
+                <div class="affiliation-item">
+                    <span class="affiliation-number">3</span>
+                    <span class="affiliation-text">New York University, USA</span>
+                </div>
+                <div class="affiliation-item">
+                    <span class="affiliation-number">4</span>
+                    <span class="affiliation-text">Escuela Nacional de Estudios Superiores, Morelia, México</span>
+                </div>
+                <div class="affiliation-item">
+                    <span class="affiliation-number">5</span>
+                    <span class="affiliation-text">Queen Mary University of London, United Kingdom</span>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <a href="https://doi.org/10.5281/zenodo.17058101" class="btn btn-primary" target="_blank">Download Dataset</a>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <nav class="navigation">
+            <a href="#abstract" class="nav-link">Abstract</a>
+            <a href="#dataset" class="nav-link">Dataset</a>
+            <a href="#analysis" class="nav-link">Analysis</a>
+            <a href="#download" class="nav-link">Download</a>
+            <a href="#citation" class="nav-link">Citation</a>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Abstract Section -->
+            <section id="abstract" class="section">
+                <h2 class="section-title">Abstract</h2>
+                <div class="section-content">
+                    <p>Musical performance in vocal ensembles is shaped by multimodal and spatial interactions among singers and their environment. To facilitate research into these dynamics, we introduce <strong>MULTIVOX</strong>, a spatialized audio-visual dataset comprising 154 a cappella choral performances. The repertoire includes vocal warm-ups, lullabies, Latin American songs, and popular music arranged for choir, recorded in two acoustically distinct environments: an auditorium and a recording studio.</p>
+                    
+                    <p>Performances are conducted by small and large vocal ensembles, and captured using multiple synchronized modalities: 360° video, first-order Ambisonics, ORTF stereo, and near-field microphones for each singer. MULTIVOX includes structured annotations specifying each performer's spatial location, singing direction, height, and gender. Not all visible performers are active in every recording, enabling analyses of selective participation.</p>
+                    
+                    <p>With its multimodal recordings and performer-level annotations, MULTIVOX supports research in music informatics and multimodal perception, including sound event localization, ensemble synchronization, and performer-specific modeling in real-world music contexts.</p>
+                    
+                    <div class="keywords">
+                        <strong>Keywords:</strong> Multimodal Datasets, Singing Groups, Choral Music, Sound Localization, Musician Synchrony, Sound Direction of Arrival
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dataset Overview -->
+            <section id="dataset" class="section">
+                <h2 class="section-title">Dataset Overview</h2>
+                <div class="section-content">
+                    <div class="dataset-stats">
+                        <div class="stat-card">
+                            <div class="stat-number">154</div>
+                            <div class="stat-label">Recordings</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">3h</div>
+                            <div class="stat-label">Duration</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Sensors</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">18</div>
+                            <div class="stat-label">Songs</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">2</div>
+                            <div class="stat-label">Spaces</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">6 & 16</div>
+                            <div class="stat-label">Choir Sizes</div>
+                        </div>
+                    </div>
+
+                    <div class="figure">
+                        <img src="antifazc.jpeg" alt="Participant Setup" class="figure-image">
+                        <div class="figure-caption">
+                            <strong>Figure 1:</strong> (1) The mask used to conceal identity while allowing natural singing and breathing. Representative examples of choirs with 6 (panel 2) and 16 (panel 3) participants. Participants read sheet music from paper or their near-field recording devices (tablet or phone). The instructor guiding the performance stands in the background and is highlighted with a red box in panel 3.
+                        </div>
+                    </div>
+
+                    <h3>Recording Modalities</h3>
+                    <div class="modalities-grid">
+                        <div class="modality-card">
+                            <h4>360° Video</h4>
+                            <p>5.7K resolution at 30 fps capturing complete spatial context</p>
+                        </div>
+                        <div class="modality-card">
+                            <h4>First-order Ambisonics</h4>
+                            <p>Spatial audio recording for 3D sound localization</p>
+                        </div>
+                        <div class="modality-card">
+                            <h4>ORTF Stereo</h4>
+                            <p>Standard stereo configuration for traditional audio capture</p>
+                        </div>
+                        <div class="modality-card">
+                            <h4>Near-field Microphones</h4>
+                            <p>Individual singer recordings using personal devices</p>
+                        </div>
+                    </div>
+
+                    <div class="figure">
+                        <img src="fotos_espaciosc.png" alt="Recording Spaces" class="figure-image">
+                        <div class="figure-caption">
+                            <strong>Figure 2:</strong> MULTIVOX Recording Spaces. The left panel shows front and back photographs of the "Sala Manuel Enríquez" auditorium. The right panel shows equivalent views of the recording studio at the FMA, UAT.
+                        </div>
+                    </div>
+
+                    <div class="figure">
+                        <img src="equipmentc.png" alt="Recording Equipment" class="figure-image">
+                        <div class="figure-caption">
+                            <strong>Figure 3:</strong> (1) the far-field recording devices and their relative height positioning; (2) a representative photo of the far-field recording setup; (3) the equipment placement and distance relative to the circle where singers stood.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Analysis Section -->
+            <section id="analysis" class="section">
+                <h2 class="section-title">Multimodal Analysis</h2>
+                <div class="section-content">
+                    <p>The following analyses demonstrate the unique features captured by MULTIVOX through its modalities, illustrating spatial distributions and cross-modal comparisons.</p>
+
+                    <div class="analysis-grid">
+                        <div class="analysis-item">
+                            <div class="figure">
+                                <img src="angular_position.png" alt="Angular Position Distribution" class="figure-image">
+                                <div class="figure-caption">
+                                    <strong>Figure 4:</strong> Distribution of singer angular positions across all performances. Each location is broken down by its ratio between male and female singers.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-item">
+                            <div class="figure">
+                                <img src="height_performances.png" alt="Height Distribution" class="figure-image">
+                                <div class="figure-caption">
+                                    <strong>Figure 5:</strong> Distribution of singer heights across all performances. Each height is broken down by its ratio between male and female singers.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-item">
+                            <div class="figure">
+                                <img src="RMS_modalities.png" alt="RMS Comparison" class="figure-image">
+                                <div class="figure-caption">
+                                    <strong>Figure 6:</strong> RMS comparison across audio modalities. Near-field recordings show significantly higher RMS values compared to far-field captures.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-item">
+                            <div class="figure">
+                                <img src="f0_modalities.png" alt="F0 Analysis" class="figure-image">
+                                <div class="figure-caption">
+                                    <strong>Figure 7:</strong> Comparison of F0 content across recording modalities. Female near-field recordings show significantly higher fundamental frequency values.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="analysis-item full-width">
+                            <div class="figure">
+                                <img src="microtiming.png" alt="Micro-timing Analysis" class="figure-image">
+                                <div class="figure-caption">
+                                    <strong>Figure 8:</strong> Overlay of individual singer onsets (colored lines) derived from the acoustic envelope's rectified derivative of near-field recordings. The gray waveform is the reference far-field audio captured by the 360º camera. Each line shows moments of vocal attack across singers, revealing subtle micro-timing differences.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Download Section -->
+            <section id="download" class="section">
+                <h2 class="section-title">Download & Access</h2>
+                <div class="section-content">
+                    <div class="download-options">
+                        <div class="download-card">
+                            <h3>MULTIVOX Dataset</h3>
+                            <p>Complete MULTIVOX dataset with all modalities and annotations</p>
+                            <a href="https://doi.org/10.5281/zenodo.17058101" class="btn btn-primary" target="_blank">Download Dataset</a>
+                        </div>
+                        <div class="download-card">
+                            <h3>Research Paper</h3>
+                            <p>Read the full research paper describing the dataset, methodology, and analysis</p>
+                            <a href="https://ccrma.stanford.edu/~iran/papers/Meza_et_al_AESAIMLA_2025.pdf" class="btn btn-primary" target="_blank">Read Paper (PDF)</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Citation Section -->
+            <section id="citation" class="section">
+                <h2 class="section-title">Citation</h2>
+                <div class="section-content">
+                    <div class="citation-box">
+                        <pre class="citation-text">@inproceedings{meza2025multivox,
+  author = {Meza, G. and Sepúlveda, M. and Roman, A. S. and Sigal Sefchovich, J. R. and Roman, I. R.},
+  title = {{MULTIVOX: A Spatial Audio-Visual Dataset of Singing Groups}},
+  booktitle = {Proceedings of the AES International Conference on Artificial Intelligence and Machine Learning for Audio (AES AIMLA)},
+  year = {2025},
+  address = {London},
+  doi = {10.5281/zenodo.17058101},
+  note = {Data set}
+}
+
+@article{meza2025multivox,
+  title={MULTIVOX: A Spatial Audio-Visual Dataset of Singing Groups},
+  author={Meza G{\'o}mez, Gerardo Andr{\'e}s and Sep{\'u}lveda Morales, Mariana and Roman, Adrian S. and Sigal Sefchovich, Jorge Rodrigo and Roman, Iran R.},
+  journal={arXiv preprint},
+  year={2025}
+}</pre>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 MULTIVOX Dataset.</p>
+                <p>Contact: <a href="mailto:gmeza@uat.edu.mx">gmeza@uat.edu.mx</a></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
